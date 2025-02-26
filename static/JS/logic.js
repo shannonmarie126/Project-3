@@ -58,7 +58,7 @@ let baseMap2 = L.tileLayer(
 // build the bar chart 
 function barChart(state) {
     d3.json("output/updated.geojson").then((data)=> {
-
+      console.log(data)
       // get the state field
 
       // set the labels (years)
@@ -90,7 +90,7 @@ function barChart(state) {
       new Chart(document.getElementById('barChart'),config);
     });
 }
-
+barChart(Alabama)
 
 
 // page load function 
