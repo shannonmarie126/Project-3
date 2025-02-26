@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Income Choropleth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps and Bar Chart</title>
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Leaflet JavaScript code-->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Leaflet CSS for the maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-    <!-- D3 library -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-
-    <!-- leaflet-choropleth JavaScript -->
-    <script type="text/javascript" src="static/js/choropleth.js"></script>
-
-    <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
+    <!-- Chart.js for the bar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-    <!-- The div where we'll insert our map -->
-    <div id="map"></div>
+    <h2>Rent and Mortgage Rates by State</h2>
 
-    <!-- Our JavaScript -->
-    <script type="text/javascript" src="static/js/logic.js"></script>
+    <div class="container">
+        <!-- Div for the two maps -->
+        <div class="maps">
+            <div id="map1"></div>
+            <div id="map2"></div>
+        </div>
+
+        <!-- Div for the bar chart -->
+        <div id="barChart">
+            <!-- Dropdown menu to select data for the bar chart -->
+            <label for="chartData">Select State:</label>
+            <select id="selState" onchange="updateChart()"></select>
+            <!--Canvas for the bar chart-->
+            <canvas id="myChart"></canvas>
+
+        </div>
+    </div>
+
+    <!-- d3 and Leaflet.js for the maps -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- External JavaScript file -->
+    <script src="logic.js"></script>
 
 </body>
 
