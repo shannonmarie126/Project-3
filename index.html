@@ -39,12 +39,14 @@
         </div>
 
         <!-- Div for the bar chart -->
-        <div id="barChart">
+        <div id="myChart">
             <!-- Dropdown menu to select data for the bar chart -->
             <label for="selState">Select State:</label>
             <select id="selState" onchange="updateChart()"></select>
+            <!--Message for no data-->
+            <div id="chartMessage"></div>
             <!--Canvas for the bar chart-->
-            <canvas id="myChart"></canvas>
+            <canvas id="barChart"></canvas>
 
         </div>
     </div>
