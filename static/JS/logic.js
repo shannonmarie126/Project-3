@@ -102,7 +102,7 @@ function init(){
         let dropDown = d3.select("#selState")
         //populate the dropdown menu with the states 
         for (let i=0; i< states.length ; i++){
-            dropDown.append("option").attr("value", ).text()
+            dropDown.append("option").attr("value",states[i]).text(`${states[i]}`)
         };
 
         //get the first state 
