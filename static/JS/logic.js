@@ -85,13 +85,16 @@ function barChart(state) {
           };
           // Clear any previous chart instance before creating a new one
           let ctx = document.getElementById("barChart").getContext("2d");
+          document.getElementById("chartMessage").innerText = "";
           if (window.chartInstance) {
             window.chartInstance.destroy(); // Destroy the previous chart
           }
           window.chartInstance = new Chart(ctx, config); // Create a new chart instance
         } else {
           // If rent or mortgage data is missing remove graph
-          window.chartInstance.destroy();
+          if (window.chartInstance) {
+            window.chartInstance.destroy();
+          }
           document.getElementById("chartMessage").innerText =
             "No data available for the selected state.";
         }
