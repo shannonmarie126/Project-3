@@ -1,0 +1,79 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container holding all content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Flexbox container for the maps */
+.maps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Map styles for map1 and map2 */
+#map1,
+#map2 {
+    height: 400px;
+    width: 48%;
+}
+
+/* Bar chart container */
+#barChart {
+    width: 80%;
+    margin-top: 20px;
+}
+ .legend {
+     color: #555;
+     padding: 6px 8px;
+     font: 12px Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     background: white;
+     background: rgba(255, 255, 255, 0.8);
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+ }
+
+ .legend ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     clear: both;
+ }
+
+   .legend li {
+       display: inline-block;
+       width: 17px;
+       height: 15px;
+   }
+
+ .legend .min {
+     float: left;
+     padding-bottom: 5px;
+ }
+
+ .legend .max {
+     float: right;
+ }
+/* Canvas (Bar Chart) styles */
+canvas {
+    width: 100% !important;
+    height: 400px;
+}
