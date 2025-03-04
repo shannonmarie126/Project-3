@@ -66,7 +66,7 @@ d3.json("output/updated.geojson").then(function (response) {
       onEachFeature: function (feature, layer) {
         let rentText;
         if (feature.properties.rent) {
-          rentText = Math.round(feature.properties.rent[year]);
+          rentText = `$${Math.round(feature.properties.rent[year])}`;
         } else {
           rentText = `No data`;
         }
@@ -177,7 +177,7 @@ d3.json("output/updated.geojson").then(function (response) {
       onEachFeature: function (feature, layer) {
         let mortgageText;
         if (feature.properties.mortgage) {
-          mortgageText = Math.round(feature.properties.mortgage[year]);
+          mortgageText = `$${Math.round(feature.properties.mortgage[year])}`;
         } else {
           mortgageText = `No data`;
         }
