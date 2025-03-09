@@ -1,6 +1,6 @@
 ## Project-3
 
-**Rent vs. Mortgage: A Data-Driven Comparison Across the USA**
+## Rent vs. Mortgage: A Data-Driven Comparison Across the USA
 
 Presented by: Luis Arroyo, ​Shannon Young, ​Bhavya Jayaprakash, ​Allison Mccollum.
 
@@ -19,7 +19,7 @@ Zillow API​
 Choropleth Leaflet plug in​
 Chart.JS
 
-# Analysis #
+## Analysis #
 
 Users can engage with the project by hovering over individual states on the interactive maps to view corresponding rent and mortgage data. Additionally, the dropdown menu provides a more detailed exploration of housing costs within each state.
 
@@ -27,7 +27,7 @@ In curating this dataset, we carefully considered several ethical implications. 
 
 We obtained our dataset from Zillow (www.zillow.com); we used the choropleth plugin in order to create the maps.
 
-## Visual Analysis Web page ##
+## Visual Analysis  #
 
 # Link to the web page #
 
